@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cesium 全局特效（一） | 有机猴灬残暴Sama</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <script>
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?2ac01fd25230ad4a6d23c56daa31eba5";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    <meta name="description" content="记录生活 记录美">
+    
+    <link rel="preload" href="/assets/css/0.styles.08247ea9.css" as="style"><link rel="preload" href="/assets/js/app.66a81a61.js" as="script"><link rel="preload" href="/assets/js/2.95ed291f.js" as="script"><link rel="preload" href="/assets/js/1.f69b15e4.js" as="script"><link rel="preload" href="/assets/js/17.5d2f82ce.js" as="script"><link rel="preload" href="/assets/js/67.c220b3d8.js" as="script"><link rel="prefetch" href="/assets/js/100.4313cdbd.js"><link rel="prefetch" href="/assets/js/101.b90f4e76.js"><link rel="prefetch" href="/assets/js/102.62a1bfd5.js"><link rel="prefetch" href="/assets/js/103.3db57623.js"><link rel="prefetch" href="/assets/js/104.7d1efc3c.js"><link rel="prefetch" href="/assets/js/105.732d7675.js"><link rel="prefetch" href="/assets/js/106.e0cd9acd.js"><link rel="prefetch" href="/assets/js/107.b3e4a10b.js"><link rel="prefetch" href="/assets/js/108.05661403.js"><link rel="prefetch" href="/assets/js/109.eef5f972.js"><link rel="prefetch" href="/assets/js/110.838f99ad.js"><link rel="prefetch" href="/assets/js/111.1f00d514.js"><link rel="prefetch" href="/assets/js/112.983607b2.js"><link rel="prefetch" href="/assets/js/113.9806d891.js"><link rel="prefetch" href="/assets/js/114.ec9415e6.js"><link rel="prefetch" href="/assets/js/115.d5eff808.js"><link rel="prefetch" href="/assets/js/116.59a5958a.js"><link rel="prefetch" href="/assets/js/117.ada747b3.js"><link rel="prefetch" href="/assets/js/118.8e9509c4.js"><link rel="prefetch" href="/assets/js/119.97169144.js"><link rel="prefetch" href="/assets/js/12.b032c6f0.js"><link rel="prefetch" href="/assets/js/120.adbe92fe.js"><link rel="prefetch" href="/assets/js/121.bf72a968.js"><link rel="prefetch" href="/assets/js/122.43f7f2f5.js"><link rel="prefetch" href="/assets/js/123.20103f7b.js"><link rel="prefetch" href="/assets/js/124.6db7eac2.js"><link rel="prefetch" href="/assets/js/125.e9e13aa4.js"><link rel="prefetch" href="/assets/js/126.8275dda9.js"><link rel="prefetch" href="/assets/js/127.c4dfd0f4.js"><link rel="prefetch" href="/assets/js/128.023e7d25.js"><link rel="prefetch" href="/assets/js/129.10b984ad.js"><link rel="prefetch" href="/assets/js/13.34076c07.js"><link rel="prefetch" href="/assets/js/130.3c306c73.js"><link rel="prefetch" href="/assets/js/131.8e9ef33d.js"><link rel="prefetch" href="/assets/js/132.8140a14d.js"><link rel="prefetch" href="/assets/js/133.9efc708f.js"><link rel="prefetch" href="/assets/js/134.6e5812d3.js"><link rel="prefetch" href="/assets/js/135.d1eddd46.js"><link rel="prefetch" href="/assets/js/14.95d3f63e.js"><link rel="prefetch" href="/assets/js/15.f1102e59.js"><link rel="prefetch" href="/assets/js/16.23623d1c.js"><link rel="prefetch" href="/assets/js/18.2e9453e0.js"><link rel="prefetch" href="/assets/js/19.62d61477.js"><link rel="prefetch" href="/assets/js/20.a553a3e3.js"><link rel="prefetch" href="/assets/js/21.4c72c5e3.js"><link rel="prefetch" href="/assets/js/22.2c0059f0.js"><link rel="prefetch" href="/assets/js/23.9085a39d.js"><link rel="prefetch" href="/assets/js/24.ded1c11a.js"><link rel="prefetch" href="/assets/js/25.0c36974a.js"><link rel="prefetch" href="/assets/js/26.974a0d42.js"><link rel="prefetch" href="/assets/js/27.3686f857.js"><link rel="prefetch" href="/assets/js/28.330776c4.js"><link rel="prefetch" href="/assets/js/29.e9e3fcdc.js"><link rel="prefetch" href="/assets/js/3.6a15f127.js"><link rel="prefetch" href="/assets/js/30.9919d840.js"><link rel="prefetch" href="/assets/js/31.03789cb2.js"><link rel="prefetch" href="/assets/js/32.60e05869.js"><link rel="prefetch" href="/assets/js/33.80e8ac43.js"><link rel="prefetch" href="/assets/js/34.2031ff3f.js"><link rel="prefetch" href="/assets/js/35.ebbd50a9.js"><link rel="prefetch" href="/assets/js/36.6096c224.js"><link rel="prefetch" href="/assets/js/37.848bcfcf.js"><link rel="prefetch" href="/assets/js/38.466cc550.js"><link rel="prefetch" href="/assets/js/39.a1d07e03.js"><link rel="prefetch" href="/assets/js/4.9d5c1ffb.js"><link rel="prefetch" href="/assets/js/40.e624e57e.js"><link rel="prefetch" href="/assets/js/41.17c4be8a.js"><link rel="prefetch" href="/assets/js/42.c93a2cee.js"><link rel="prefetch" href="/assets/js/43.06b6aab1.js"><link rel="prefetch" href="/assets/js/44.688da8db.js"><link rel="prefetch" href="/assets/js/45.889c7bb6.js"><link rel="prefetch" href="/assets/js/46.9202b3f5.js"><link rel="prefetch" href="/assets/js/47.5fdea845.js"><link rel="prefetch" href="/assets/js/48.54ea8532.js"><link rel="prefetch" href="/assets/js/49.90fc53f9.js"><link rel="prefetch" href="/assets/js/5.ef58169f.js"><link rel="prefetch" href="/assets/js/50.f7b0bd88.js"><link rel="prefetch" href="/assets/js/51.68ff3ac2.js"><link rel="prefetch" href="/assets/js/52.be8d3d79.js"><link rel="prefetch" href="/assets/js/53.1daeba25.js"><link rel="prefetch" href="/assets/js/54.e89bdefe.js"><link rel="prefetch" href="/assets/js/55.56d39524.js"><link rel="prefetch" href="/assets/js/56.c06122d0.js"><link rel="prefetch" href="/assets/js/57.5c4831ba.js"><link rel="prefetch" href="/assets/js/58.dd99db0d.js"><link rel="prefetch" href="/assets/js/59.40ccbad6.js"><link rel="prefetch" href="/assets/js/6.7845c677.js"><link rel="prefetch" href="/assets/js/60.11b7e29e.js"><link rel="prefetch" href="/assets/js/61.57b69e4a.js"><link rel="prefetch" href="/assets/js/62.3f6f8698.js"><link rel="prefetch" href="/assets/js/63.47dd2f0a.js"><link rel="prefetch" href="/assets/js/64.638f7bba.js"><link rel="prefetch" href="/assets/js/65.541ec5ec.js"><link rel="prefetch" href="/assets/js/66.7dde6359.js"><link rel="prefetch" href="/assets/js/68.fc5aa8cb.js"><link rel="prefetch" href="/assets/js/69.f16f9cfd.js"><link rel="prefetch" href="/assets/js/7.89fd4df2.js"><link rel="prefetch" href="/assets/js/70.50770621.js"><link rel="prefetch" href="/assets/js/71.9784c4ee.js"><link rel="prefetch" href="/assets/js/72.1b84d1f1.js"><link rel="prefetch" href="/assets/js/73.b8648498.js"><link rel="prefetch" href="/assets/js/74.113efbf5.js"><link rel="prefetch" href="/assets/js/75.8eb0178c.js"><link rel="prefetch" href="/assets/js/76.975ea942.js"><link rel="prefetch" href="/assets/js/77.94d06a8a.js"><link rel="prefetch" href="/assets/js/78.c80aab87.js"><link rel="prefetch" href="/assets/js/79.d79a1ced.js"><link rel="prefetch" href="/assets/js/8.12143058.js"><link rel="prefetch" href="/assets/js/80.f759fc5b.js"><link rel="prefetch" href="/assets/js/81.362143e9.js"><link rel="prefetch" href="/assets/js/82.89136399.js"><link rel="prefetch" href="/assets/js/83.c545ab04.js"><link rel="prefetch" href="/assets/js/84.ff4a93a8.js"><link rel="prefetch" href="/assets/js/85.a53624c2.js"><link rel="prefetch" href="/assets/js/86.e13c8773.js"><link rel="prefetch" href="/assets/js/87.ebc8c850.js"><link rel="prefetch" href="/assets/js/88.756e2089.js"><link rel="prefetch" href="/assets/js/89.176c322f.js"><link rel="prefetch" href="/assets/js/9.7e891730.js"><link rel="prefetch" href="/assets/js/90.b5834f57.js"><link rel="prefetch" href="/assets/js/91.319af357.js"><link rel="prefetch" href="/assets/js/92.740c0e79.js"><link rel="prefetch" href="/assets/js/93.181785ef.js"><link rel="prefetch" href="/assets/js/94.8ef46035.js"><link rel="prefetch" href="/assets/js/95.d74cea5a.js"><link rel="prefetch" href="/assets/js/96.a3808362.js"><link rel="prefetch" href="/assets/js/97.27fac9c0.js"><link rel="prefetch" href="/assets/js/98.01444500.js"><link rel="prefetch" href="/assets/js/99.2fa3467e.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.728dbb9e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.08247ea9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar blog-catalog"><div class="loading-page" data-v-645b43a6 data-v-645b43a6><div class="loading-box" data-v-645b43a6><p data-v-645b43a6>有机猴灬残暴Sama</p></div></div> <header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img alt="有机猴灬残暴Sama" src="/img/logo.png" class="logo"> <span class="site-name can-hide">有机猴灬残暴Sama</span></a> <div class="links"><div class="color-button"><i class="say-my-life-i say-my-life-i-yueliang"></i> <!----></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/Archives.html" class="nav-link">
+  归档
+</a></div><div class="nav-item"><a href="/blog/Tag.html" class="nav-link">
+  标签
+</a></div><div class="nav-item"><a href="/notes/Notes.html" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="/Friend.html" class="nav-link">
+  友链
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="GitHub" class="dropdown-title"><span class="title">GitHub</span> <span class="arrow down"></span></button> <button type="button" aria-label="GitHub" class="mobile-dropdown-title"><span class="title">GitHub</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/canbaoSama" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  canbaoSama
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/canbaoSama/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  项目地址
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/Archives.html" class="nav-link">
+  归档
+</a></div><div class="nav-item"><a href="/blog/Tag.html" class="nav-link">
+  标签
+</a></div><div class="nav-item"><a href="/notes/Notes.html" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="/Friend.html" class="nav-link">
+  友链
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="GitHub" class="dropdown-title"><span class="title">GitHub</span> <span class="arrow down"></span></button> <button type="button" aria-label="GitHub" class="mobile-dropdown-title"><span class="title">GitHub</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/canbaoSama" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  canbaoSama
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/canbaoSama/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  项目地址
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <!----> </aside> <!----> <div class="hide-password" data-v-6afe52e8><i class="shni shn-lock center" data-v-6afe52e8></i> <i class="shni shn-unlock right" data-v-6afe52e8></i> <div class="code-input-main" data-v-6afe52e8><div class="code-input-main-item" data-v-6afe52e8></div> <div class="code-input-main-item" data-v-6afe52e8></div> <div class="code-input-main-item" data-v-6afe52e8></div> <div class="code-input-main-item" data-v-6afe52e8></div></div> <input maxlength="4" type="tel" value="" data-v-6afe52e8></div> <!----> <main class="page"> <div class="theme-default-content content__default"><h1 id="cesium-全局特效-一"><a href="#cesium-全局特效-一" class="header-anchor">#</a> Cesium 全局特效（一）</h1> <h2 id="cesium-全局特效-雨、雪、雾、日照-每种划分有大、中、小"><a href="#cesium-全局特效-雨、雪、雾、日照-每种划分有大、中、小" class="header-anchor">#</a> Cesium 全局特效：雨、雪、雾、日照（每种划分有大、中、小）</h2> <p class="date">2024/01/01 15:41:20 
+<span id="/blog/cesium/SceneSim_01.html" class="leancloud_visitors"><i class="shni shn-eye-fill"></i> <i class="leancloud-visitors-count"></i></span></p> <h3 id="说明"><a href="#说明" class="header-anchor">#</a> 说明</h3> <p>目前实现了的全屏 Cesium 场景渲染，包括雨、雪、雾、日照以及它们的大、中、小效果，只需要通过一个公共函数触发调用每种场景的着色器代码即可</p> <h3 id="先上效果图"><a href="#先上效果图" class="header-anchor">#</a> 先上效果图</h3> <p><span class="text-red">雾霾选择中等效果是因为大雾看不清</span></p> <p><img src="/assets/img/scene_sim_ui.f0806a6b.jpg" alt="图片"></p><div class="image-name">图片1：UI 界面</div><p></p> <p><img src="/assets/img/scene_sim_normal.317ecd24.jpg" alt="图片"></p><div class="image-name">图片2：普通</div><p></p> <p><img src="/assets/img/scene_sim_light.f159684e.jpg" alt="图片"></p><div class="image-name">图片3：强光</div><p></p> <p><img src="/assets/img/scene_sim_rain.fbd106ec.jpg" alt="图片"></p><div class="image-name">图片4：大雨</div><p></p> <p><img src="/assets/img/scene_sim_snow.f8717c23.jpg" alt="图片"></p><div class="image-name">图片5：大雪</div><p></p> <p><img src="/assets/img/scene_sim_fog.768770c1.jpg" alt="图片"></p><div class="image-name">图片6：中雾</div><p></p> <h3 id="公共的实现代码"><a href="#公共的实现代码" class="header-anchor">#</a> 公共的实现代码</h3> <p>主要调用代码如下，可以看到，实现不同全屏特效是通过 <span class="text-green">postProcessStages</span> 调用着色器代码实现的，如果后续要添加其他的效果也大差不差，
+只要你能够实现这些着色器代码。</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token keyword">type</span> <span class="token punctuation">{</span> PostProcessStageComposite<span class="token punctuation">,</span> Viewer <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'cesium'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> PostProcessStage<span class="token punctuation">,</span> PostProcessStageLibrary <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'cesium'</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> fsNameMap <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@/constants/sceneFs'</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">{</span> <span class="token constant">SCENE_SIM</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@/constants/tool'</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">SceneSimIF</span> <span class="token punctuation">{</span>
+    scene<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token comment">// 模拟的场景</span>
+    level<span class="token operator">:</span> <span class="token builtin">string</span> <span class="token comment">// 场景渲染级别</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 主要是设置需要着色器渲染的场景</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">setSceneSim</span><span class="token punctuation">(</span>viewer<span class="token operator">:</span> Viewer<span class="token punctuation">,</span> options<span class="token operator">:</span> SceneSimIF<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> sceneSim <span class="token operator">=</span> <span class="token operator">&lt;</span>PostProcessStage <span class="token operator">|</span> PostProcessStageComposite<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token keyword">switch</span> <span class="token punctuation">(</span>options<span class="token punctuation">.</span>scene<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> <span class="token constant">SCENE_SIM</span><span class="token punctuation">.</span><span class="token constant">RAIN</span><span class="token punctuation">.</span>key<span class="token operator">:</span>
+        <span class="token keyword">case</span> <span class="token constant">SCENE_SIM</span><span class="token punctuation">.</span><span class="token constant">SNOW</span><span class="token punctuation">.</span>key<span class="token operator">:</span>
+        <span class="token keyword">case</span> <span class="token constant">SCENE_SIM</span><span class="token punctuation">.</span><span class="token constant">FOG</span><span class="token punctuation">.</span>key<span class="token operator">:</span> <span class="token punctuation">{</span>
+            sceneSim <span class="token operator">=</span> viewer<span class="token punctuation">.</span>scene<span class="token punctuation">.</span>postProcessStages<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">PostProcessStage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                name<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">SCENE_SIM</span><span class="token punctuation">[</span>options<span class="token punctuation">.</span>scene<span class="token punctuation">]</span><span class="token punctuation">.</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">_Scene_Sim</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+                fragmentShader<span class="token operator">:</span> fsNameMap<span class="token punctuation">[</span><span class="token constant">SCENE_SIM</span><span class="token punctuation">[</span>options<span class="token punctuation">.</span>scene<span class="token punctuation">]</span><span class="token operator">?.</span>levels<span class="token operator">?.</span><span class="token punctuation">[</span>options<span class="token punctuation">.</span>level<span class="token punctuation">]</span><span class="token operator">?.</span>fs<span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token keyword">break</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">case</span> <span class="token constant">SCENE_SIM</span><span class="token punctuation">.</span><span class="token constant">BEAM</span><span class="token punctuation">.</span>key<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>options<span class="token punctuation">.</span>level<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                sceneSim <span class="token operator">=</span> viewer<span class="token punctuation">.</span>scene<span class="token punctuation">.</span>postProcessStages<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>PostProcessStageLibrary<span class="token punctuation">.</span><span class="token function">createBrightnessStage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                sceneSim<span class="token punctuation">.</span>enabled <span class="token operator">=</span> <span class="token boolean">true</span>
+                sceneSim<span class="token punctuation">.</span>uniforms<span class="token punctuation">.</span>brightness <span class="token operator">=</span> <span class="token constant">SCENE_SIM</span><span class="token punctuation">[</span>options<span class="token punctuation">.</span>scene<span class="token punctuation">]</span><span class="token operator">?.</span>levels<span class="token operator">?.</span><span class="token punctuation">[</span>options<span class="token punctuation">.</span>level<span class="token punctuation">]</span><span class="token operator">?.</span>brightness <span class="token comment">// （调节亮度0 - 3最佳）</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">break</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">default</span><span class="token operator">:</span> <span class="token keyword">break</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> sceneSim <span class="token comment">// 返回出去后，可以根据这个 sceneSim 清除效果</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br></div></div><h3 id="全局特效场景参数"><a href="#全局特效场景参数" class="header-anchor">#</a> 全局特效场景参数</h3> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token comment">// 地球的场景模拟种类</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token constant">SCENE_SIM</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span>key<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">any</span> <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token constant">BEAM</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">'日照模拟'</span><span class="token punctuation">,</span>
+        key<span class="token operator">:</span> <span class="token string">'BEAM'</span><span class="token punctuation">,</span>
+        renderKey<span class="token operator">:</span> <span class="token string">'beam'</span><span class="token punctuation">,</span>
+        levels<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token constant">STRONG</span><span class="token operator">:</span> <span class="token punctuation">{</span> key<span class="token operator">:</span> <span class="token string">'STRONG'</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'强光'</span><span class="token punctuation">,</span> brightness<span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token constant">DEFAULT</span><span class="token operator">:</span> <span class="token punctuation">{</span> key<span class="token operator">:</span> <span class="token string">'DEFAULT'</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'中强光'</span><span class="token punctuation">,</span> brightness<span class="token operator">:</span> <span class="token number">1.2</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token constant">WEAK</span><span class="token operator">:</span> <span class="token punctuation">{</span> key<span class="token operator">:</span> <span class="token string">'WEAK'</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'弱光'</span><span class="token punctuation">,</span> brightness<span class="token operator">:</span> <span class="token number">0.8</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token constant">RAIN</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">'雨水模拟'</span><span class="token punctuation">,</span>
+        key<span class="token operator">:</span> <span class="token string">'RAIN'</span><span class="token punctuation">,</span>
+        renderKey<span class="token operator">:</span> <span class="token string">'rain'</span><span class="token punctuation">,</span>
+        levels<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token constant">LARGE</span><span class="token operator">:</span> <span class="token punctuation">{</span> key<span class="token operator">:</span> <span class="token string">'LARGE'</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'大雨'</span><span class="token punctuation">,</span> fs<span class="token operator">:</span> <span class="token string">'large_rain'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token constant">DEFAULT</span><span class="token operator">:</span> <span class="token punctuation">{</span> key<span class="token operator">:</span> <span class="token string">'DEFAULT'</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'中雨'</span><span class="token punctuation">,</span> fs<span class="token operator">:</span> <span class="token string">'default_rain'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token constant">SMALL</span><span class="token operator">:</span> <span class="token punctuation">{</span> key<span class="token operator">:</span> <span class="token string">'SMALL'</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'小雨'</span><span class="token punctuation">,</span> fs<span class="token operator">:</span> <span class="token string">'small_rain'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token constant">SNOW</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">'雪景模拟'</span><span class="token punctuation">,</span>
+        key<span class="token operator">:</span> <span class="token string">'SNOW'</span><span class="token punctuation">,</span>
+        renderKey<span class="token operator">:</span> <span class="token string">'snow'</span><span class="token punctuation">,</span>
+        levels<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token constant">LARGE</span><span class="token operator">:</span> <span class="token punctuation">{</span> key<span class="token operator">:</span> <span class="token string">'LARGE'</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'大雪'</span><span class="token punctuation">,</span> fs<span class="token operator">:</span> <span class="token string">'large_snow'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token constant">DEFAULT</span><span class="token operator">:</span> <span class="token punctuation">{</span> key<span class="token operator">:</span> <span class="token string">'DEFAULT'</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'中雪'</span><span class="token punctuation">,</span> fs<span class="token operator">:</span> <span class="token string">'default_snow'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token constant">SMALL</span><span class="token operator">:</span> <span class="token punctuation">{</span> key<span class="token operator">:</span> <span class="token string">'SMALL'</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'小雪'</span><span class="token punctuation">,</span> fs<span class="token operator">:</span> <span class="token string">'small_snow'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token constant">FOG</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        name<span class="token operator">:</span> <span class="token string">'雾气模拟'</span><span class="token punctuation">,</span>
+        key<span class="token operator">:</span> <span class="token string">'FOG'</span><span class="token punctuation">,</span>
+        renderKey<span class="token operator">:</span> <span class="token string">'fog'</span><span class="token punctuation">,</span>
+        levels<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token constant">LARGE</span><span class="token operator">:</span> <span class="token punctuation">{</span> key<span class="token operator">:</span> <span class="token string">'LARGE'</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'大雾'</span><span class="token punctuation">,</span> fs<span class="token operator">:</span> <span class="token string">'large_fog'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token constant">DEFAULT</span><span class="token operator">:</span> <span class="token punctuation">{</span> key<span class="token operator">:</span> <span class="token string">'DEFAULT'</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'中雾'</span><span class="token punctuation">,</span> fs<span class="token operator">:</span> <span class="token string">'default_fog'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token constant">SMALL</span><span class="token operator">:</span> <span class="token punctuation">{</span> key<span class="token operator">:</span> <span class="token string">'SMALL'</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">'小雾'</span><span class="token punctuation">,</span> fs<span class="token operator">:</span> <span class="token string">'small_fog'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h3 id="最重要的着色器代码"><a href="#最重要的着色器代码" class="header-anchor">#</a> 最重要的着色器代码</h3> <p>这里的每一种特效的着色器代码，他们的大、中、小效果其实基本一样，只需要调整你内部的参数值即可</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">export</span> <span class="token keyword">const</span> large_rain <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">//【内置变量】颜色纹理，用于在片元着色器中访问各个像素的颜色
+    uniform sampler2D colorTexture;
+    //【内置变量】纹理坐标，是从顶点着色器中传递下来的。
+    in vec2 v_textureCoordinates;
+
+    float hash(float x){
+    //取小数部分
+    return fract(sin(x*23.3)*13.13);
+    }
+
+    out vec4 vFragColor;
+    void main(){
+        //将当前帧数转换为以秒为单位的时间
+        //在Cesium中，czm_frameNumber是一个递增整数值
+        //且一秒钟内，平均会渲染大约60帧，因此除以60可以得到近似的秒数
+        float time = czm_frameNumber / 60.0;
+        
+        //窗口分辨率
+        vec2 resolution = czm_viewport.zw;
+        //转换为uv坐标（-1,1）
+        //gl_FragCoord.xy 表示当前片段的屏幕坐标（或窗口坐标）的X和Y分量。
+        //resolution.xy 表示屏幕或窗口的宽度和高度
+        //gl_FragCoord.xy * 2.0 - resolution.xy 将屏幕坐标扩大两倍，然后减去屏幕的宽度和高度。这样处理可以将坐标原点移至屏幕中心。
+        vec2 uv=(gl_FragCoord.xy*2.-resolution.xy)/min(resolution.x,resolution.y);
+        
+        //雨颜色值（153，178，204），并做归一化处理（除以255）
+        vec3 c=vec3(0.6,0.7,0.8);
+        //定义雨滴的倾角0.4弧度，转为角度约为23度
+        float a=0.4;
+        float si=sin(a),co=cos(a);
+        //将纹理坐标uv角度a旋转
+        uv*=mat2(co,-si,si,co);
+        //将纹理坐标进行缩放变换（变形）
+        uv*=length(uv+vec2(0,4.9))*0.3+1.0;
+        
+        //加入时间time，基础雨滴颜色，及变换后的uv坐标和一系列随机值运算
+        //得到每一个像素的雨滴颜色
+        float v=1.0-sin(hash(floor(uv.x*100.0))*2.0);
+        float b=clamp(abs(sin(20.0*time*v+uv.y*(5.0/(2.0+v))))-0.95,0.0,1.0)*60.;// 这里的60是雨滴大小
+        c*=v*b;
+        //将雨与场景颜色混合
+        //texture(colorTexture, v_textureCoordinates)是获取场景原始颜色值
+        vFragColor = mix(texture(colorTexture, v_textureCoordinates), vec4(c, 1),0.6);// 这里的0.6是背景颜色透明度
+    }</span><span class="token template-punctuation string">`</span></span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> default_rain <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    uniform sampler2D colorTexture;
+    in vec2 v_textureCoordinates;
+
+    float hash(float x){
+    return fract(sin(x*23.3)*13.13);
+    }
+
+    out vec4 vFragColor;
+    void main(){
+        float time = czm_frameNumber / 60.0;
+        
+        vec2 resolution = czm_viewport.zw;
+        vec2 uv=(gl_FragCoord.xy*2.-resolution.xy)/min(resolution.x,resolution.y);
+        
+        vec3 c=vec3(0.6,0.7,0.8);
+        float a=0.4;
+        float si=sin(a),co=cos(a);
+        uv*=mat2(co,-si,si,co);
+        uv*=length(uv+vec2(0,4.9))*0.3+1.0;
+        float v=1.0-sin(hash(floor(uv.x*100.0))*2.0);
+        float b=clamp(abs(sin(20.0*time*v+uv.y*(5.0/(2.0+v))))-0.95,0.0,1.0)*20.;
+        c*=v*b;
+        vFragColor = mix(texture(colorTexture, v_textureCoordinates), vec4(c, 1),0.4);
+    }</span><span class="token template-punctuation string">`</span></span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> small_rain <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+        uniform sampler2D colorTexture;
+        in vec2 v_textureCoordinates;
+
+        float hash(float x){
+        return fract(sin(x*23.3)*13.13);
+        }
+
+        out vec4 vFragColor;
+        void main(){
+            float time = czm_frameNumber / 60.0;
+            
+            vec2 resolution = czm_viewport.zw;
+            vec2 uv=(gl_FragCoord.xy*2.-resolution.xy)/min(resolution.x,resolution.y);
+            
+            vec3 c=vec3(0.6,0.7,0.8);
+            float a=0.4;
+            float si=sin(a),co=cos(a);
+            uv*=mat2(co,-si,si,co);
+            uv*=length(uv+vec2(0,4.9))*0.3+1.0;
+            float v=1.0-sin(hash(floor(uv.x*100.0))*2.0);
+            float b=clamp(abs(sin(20.0*time*v+uv.y*(5.0/(2.0+v))))-0.95,0.0,1.0)*5.;
+            c*=v*b;
+            vFragColor = mix(texture(colorTexture, v_textureCoordinates), vec4(c, 1),0.2);
+        }</span><span class="token template-punctuation string">`</span></span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> large_snow <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    uniform sampler2D colorTexture; //输入的场景渲染照片
+    in vec2 v_textureCoordinates;
+    
+    float snow(vec2 uv,float scale)
+    {
+        float time = czm_frameNumber / 60.0;
+        float w=smoothstep(1.,0.,-uv.y*(scale/10.));if(w&lt;.1)return 0.;
+        uv+=time/scale;uv.y+=time*2./scale;uv.x+=sin(uv.y+time*.5)/scale;
+        uv*=scale;vec2 s=floor(uv),f=fract(uv),p;float k=3.,d;
+        p=.5+.35*sin(11.*fract(sin((s+p+scale)*mat2(7,3,6,5))*5.))-f;d=length(p);k=min(d,k);
+        k=smoothstep(0.,k,sin(f.x+f.y)*0.03);
+        return k*w;
+    }
+
+    out vec4 vFragColor;
+    void main(void){
+        vec2 resolution = czm_viewport.zw;
+        vec2 uv=(gl_FragCoord.xy*2.-resolution.xy)/min(resolution.x,resolution.y);
+        vec3 finalColor=vec3(0);
+        //float c=smoothstep(1.,0.3,clamp(uv.y*.3+.8,0.,.75));
+        float c = 0.0;
+        c+=snow(uv,30.)*.0;
+        c+=snow(uv,20.)*.0;
+        c+=snow(uv,15.)*.0;
+        c+=snow(uv,10.);
+        c+=snow(uv,8.);
+        c+=snow(uv,6.);
+        c+=snow(uv,5.);
+        finalColor=(vec3(c)); //屏幕上雪的颜色
+        vFragColor = mix(texture(colorTexture, v_textureCoordinates), vec4(finalColor,1), 0.3);  //将雪和三维场景融合
+    }
+  </span><span class="token template-punctuation string">`</span></span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> default_snow <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    uniform sampler2D colorTexture; //输入的场景渲染照片
+    in vec2 v_textureCoordinates;
+    
+    float snow(vec2 uv,float scale)
+    {
+        float time = czm_frameNumber / 60.0;
+        float w=smoothstep(1.,0.,-uv.y*(scale/10.));if(w&lt;.1)return 0.;
+        uv+=time/scale;uv.y+=time*2./scale;uv.x+=sin(uv.y+time*.5)/scale;
+        uv*=scale;vec2 s=floor(uv),f=fract(uv),p;float k=3.,d;
+        p=.5+.35*sin(11.*fract(sin((s+p+scale)*mat2(7,3,6,5))*5.))-f;d=length(p);k=min(d,k);
+        k=smoothstep(0.,k,sin(f.x+f.y)*0.02);
+        return k*w;
+    }
+
+    out vec4 vFragColor;
+    void main(void){
+        vec2 resolution = czm_viewport.zw;
+        vec2 uv=(gl_FragCoord.xy*2.-resolution.xy)/min(resolution.x,resolution.y);
+        vec3 finalColor=vec3(0);
+        //float c=smoothstep(1.,0.3,clamp(uv.y*.3+.8,0.,.75));
+        float c = 0.0;
+        c+=snow(uv,30.)*.0;
+        c+=snow(uv,20.)*.0;
+        c+=snow(uv,15.)*.0;
+        c+=snow(uv,10.);
+        c+=snow(uv,8.);
+        c+=snow(uv,6.);
+        c+=snow(uv,5.);
+        finalColor=(vec3(c)); //屏幕上雪的颜色
+        vFragColor = mix(texture(colorTexture, v_textureCoordinates), vec4(finalColor,1), 0.3);  //将雪和三维场景融合
+    }
+  </span><span class="token template-punctuation string">`</span></span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> small_snow <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    uniform sampler2D colorTexture; //输入的场景渲染照片
+    in vec2 v_textureCoordinates;
+    
+    float snow(vec2 uv,float scale)
+    {
+        float time = czm_frameNumber / 60.0;
+        float w=smoothstep(1.,0.,-uv.y*(scale/10.));if(w&lt;.1)return 0.;
+        uv+=time/scale;uv.y+=time*2./scale;uv.x+=sin(uv.y+time*.5)/scale;
+        uv*=scale;vec2 s=floor(uv),f=fract(uv),p;float k=3.,d;
+        p=.5+.35*sin(11.*fract(sin((s+p+scale)*mat2(7,3,6,5))*5.))-f;d=length(p);k=min(d,k);
+        k=smoothstep(0.,k,sin(f.x+f.y)*0.01);
+        return k*w;
+    }
+
+    out vec4 vFragColor;
+    void main(void){
+        vec2 resolution = czm_viewport.zw;
+        vec2 uv=(gl_FragCoord.xy*2.-resolution.xy)/min(resolution.x,resolution.y);
+        vec3 finalColor=vec3(0);
+        //float c=smoothstep(1.,0.3,clamp(uv.y*.3+.8,0.,.75));
+        float c = 0.0;
+        c+=snow(uv,30.)*.0;
+        c+=snow(uv,20.)*.0;
+        c+=snow(uv,15.)*.0;
+        c+=snow(uv,10.);
+        c+=snow(uv,8.);
+        c+=snow(uv,6.);
+        c+=snow(uv,5.);
+        finalColor=(vec3(c)); //屏幕上雪的颜色
+        vFragColor = mix(texture(colorTexture, v_textureCoordinates), vec4(finalColor,1), 0.3);  //将雪和三维场景融合
+    }
+  </span><span class="token template-punctuation string">`</span></span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> large_fog <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string"> 
+    uniform sampler2D colorTexture;
+    uniform sampler2D depthTexture;
+    in vec2 v_textureCoordinates;
+
+    out vec4 vFragColor;
+    void main(void){
+        vec4 origcolor=texture(colorTexture, v_textureCoordinates);
+        vec4 fogcolor=vec4(0.8,0.8,0.8,0.5);
+
+        float depth = czm_readDepth(depthTexture, v_textureCoordinates);
+        vec4 depthcolor=texture(depthTexture, v_textureCoordinates);
+        float f=(depthcolor.r-0.22)/0.8;
+        if(f&lt;0.0) f=0.0;
+        else if(f&gt;1.0) f=1.0;
+        vFragColor = mix(origcolor,fogcolor,f);
+    }
+    </span><span class="token template-punctuation string">`</span></span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> default_fog <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string"> 
+    uniform sampler2D colorTexture;
+    uniform sampler2D depthTexture;
+    in vec2 v_textureCoordinates;
+
+    out vec4 vFragColor;
+    void main(void){
+        vec4 origcolor=texture(colorTexture, v_textureCoordinates);
+        vec4 fogcolor=vec4(0.8,0.8,0.8,0.3);
+
+        float depth = czm_readDepth(depthTexture, v_textureCoordinates);
+        vec4 depthcolor=texture(depthTexture, v_textureCoordinates);
+        float f=(depthcolor.r-0.22)/2.8;
+        if(f&lt;0.0) f=0.0;
+        else if(f&gt;1.0) f=1.0;
+        vFragColor = mix(origcolor,fogcolor,f);
+    }
+    </span><span class="token template-punctuation string">`</span></span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> small_fog <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string"> 
+    uniform sampler2D colorTexture;
+    uniform sampler2D depthTexture;
+    in vec2 v_textureCoordinates;
+
+    out vec4 vFragColor;
+    void main(void){
+        vec4 origcolor=texture(colorTexture, v_textureCoordinates);
+        vec4 fogcolor=vec4(0.8,0.8,0.8,0.1);
+
+        float depth = czm_readDepth(depthTexture, v_textureCoordinates);
+        vec4 depthcolor=texture(depthTexture, v_textureCoordinates);
+        float f=(depthcolor.r-0.22)/4.8;
+        if(f&lt;0.0) f=0.0;
+        else if(f&gt;1.0) f=1.0;
+        vFragColor = mix(origcolor,fogcolor,f);
+    }
+    </span><span class="token template-punctuation string">`</span></span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> fsNameMap<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span>key<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">any</span> <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    large_rain<span class="token punctuation">,</span>
+    default_rain<span class="token punctuation">,</span>
+    small_rain<span class="token punctuation">,</span>
+
+    large_snow<span class="token punctuation">,</span>
+    default_snow<span class="token punctuation">,</span>
+    small_snow<span class="token punctuation">,</span>
+
+    large_fog<span class="token punctuation">,</span>
+    default_fog<span class="token punctuation">,</span>
+    small_fog<span class="token punctuation">,</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br></div></div><h3 id="那么如何清除这些效果呢"><a href="#那么如何清除这些效果呢" class="header-anchor">#</a> 那么如何清除这些效果呢</h3> <p>公共渲染函数中我返回了 <span class="text-red">sceneSim</span>,我们的清除就需要利用这个</p> <div class="language-ts line-numbers-mode"><pre class="language-ts"><code>viewer<span class="token punctuation">.</span>scene<span class="token punctuation">.</span>postProcessStages<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>sceneSim<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div id="valine-wrap-1723598535851" class="valine-module"></div> <!----></div> <!----> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">1/23/2024, 5:44:15 PM</span></div></footer> <!----> </main> <div class="record-wrap"><a href="http://beian.miit.gov.cn/">备案号还在审核</a></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.66a81a61.js" defer></script><script src="/assets/js/2.95ed291f.js" defer></script><script src="/assets/js/1.f69b15e4.js" defer></script><script src="/assets/js/17.5d2f82ce.js" defer></script><script src="/assets/js/67.c220b3d8.js" defer></script>
+  </body>
+</html>

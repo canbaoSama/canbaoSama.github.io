@@ -1,0 +1,205 @@
+{
+    "tag": [
+        { "name": "vue", "type": "vue" },
+        { "name": "ts", "type": "ts" },
+        { "name": "css", "type": "css" },
+        { "name": "javascript", "type": "javascript" },
+        { "name": "小程序", "type": "applets" },
+        { "name": "vuepress", "type": "vuepress" },
+        { "name": "转", "type": "info" },
+        {
+            "name": "music",
+            "type": "music",
+            "icon": "say-my-life-i say-my-life-i-musicnote"
+        },
+        { "name": "奇闻异事", "type": "anecdote" },
+        { "name": "movie", "type": "movie", "icon": "shni shn-video-fill" },
+        { "name": "git", "type": "git" },
+        { "name": "工具", "type": "tool" },
+        { "name": "前端", "type": "frontEnd" },
+        { "name": "Cesium", "type": "cesium" }
+    ],
+    "blog": [
+        {
+            "title": "代码 review 规范总结",
+            "tag": [{ "name": "前端", "type": "frontEnd" }],
+            "url": "/blog/frontEnd/CodeReview.html",
+            "date": "2022/10/13 12:00"
+        },
+        {
+            "title": "基于 vue3 + Element-plus 封装的 cesium 绘制赋值界面和方法",
+            "tag": [
+                { "name": "前端", "type": "frontEnd" },
+                { "name": "vue", "type": "vue" },
+                { "name": "Cesium", "type": "cesium" },
+                { "name": "ts", "type": "ts" }  
+            ],
+            "url": "/blog/cesium/CesiumDrawTs.html",
+            "date": "2024/01/05 12:00",
+            "top": true
+        },
+        {
+            "title": "上传视频生成视频封面图展示",
+            "tag": [{ "name": "javascript", "type": "javascript" }],
+            "url": "/blog/js/videoImg.html",
+            "date": "2022/06/21 15:00"
+        },
+        {
+            "title": "在线工具推荐",
+            "tag": [{ "name": "工具", "type": "git" }],
+            "url": "/blog/tool/toolOnline.html",
+            "date": "2022/06/19 15:41"
+        },
+        {
+            "title": "ES7 await 语法分析，await 的执行顺序",
+            "tag": [{ "name": "javascript", "type": "javascript" }],
+            "url": "/blog/js/await.html",
+            "date": "2022/07/26 20:00"
+        },
+        {
+            "title": "MARKDOWN 语法大全整理",
+            "tag": [{ "name": "工具", "type": "git" }],
+            "url": "/blog/tool/markdown.html",
+            "date": "2022/07/28 20:00"
+        },
+        {
+            "title": "grid 布局语法整理",
+            "tag": [
+                { "name": "css", "type": "css" },
+                { "name": "转", "type": "info" }
+            ],
+            "url": "/blog/css/grid.html",
+            "date": "2022/08/02 20:00"
+        },
+        {
+            "title": "图片的模糊加载、多列布局和瀑布布局",
+            "tag": [
+                { "name": "vue", "type": "vue" },
+                { "name": "工具", "type": "tool" }
+            ],
+            "url": "/blog/vue/ImgLoading.html",
+            "date": "2022/09/26 20:00"
+        },
+        {
+            "title": "识别图片主色",
+            "tag": [
+                { "name": "vue", "type": "vue" },
+                { "name": "工具", "type": "tool" }
+            ],
+            "url": "/blog/vue/ImgComp.html",
+            "date": "2022/09/26 20:00"
+        },
+        {
+            "title": "potrace 生成 svg 图片并采用 svgo 批量压缩",
+            "tag": [
+                { "name": "vue", "type": "vue" },
+                { "name": "工具", "type": "tool" }
+            ],
+            "url": "/blog/vue/CreateSvg.html",
+            "date": "2022/09/26 20:00"
+        },
+        {
+            "title": "前端实现读取xlxs、xls数据并渲染到页面（VUE实现）",
+            "tag": [
+                { "name": "vue", "type": "vue" },
+                { "name": "js", "type": "js" }
+            ],
+            "url": "/blog/vue/Xlsx.html",
+            "date": "2022/10/12 20:00"
+        },
+        {
+            "title": "基于 vue3 的个人开发模板 vue-cli-billyang",
+            "tag": [
+                { "name": "vue", "type": "vue" },
+                { "name": "ts", "type": "ts" }
+            ],
+            "url": "/blog/vue/VueCli.html",
+            "date": "2024/01/05 20:00",
+            "top": true
+        },
+        {
+            "title": "手摸手实现 Docker 安装自己的 gitlab 服务器",
+            "tag": [
+                { "name": "tool", "type": "tool" },
+                { "name": "前端", "type": "frontEnd" }
+            ],
+            "url": "/blog/tool/DockerCI_01.html",
+            "date": "2024/01/10 20:00",
+            "top": true
+        },
+        {
+            "title": "手摸脚实现 Docker 安装 gitlab-runner",
+            "tag": [
+                { "name": "tool", "type": "tool" },
+                { "name": "前端", "type": "frontEnd" }
+            ],
+            "url": "/blog/tool/DockerCI_02.html",
+            "date": "2024/01/10 20:00",
+            "top": true
+        },
+        {
+            "title": "脚摸脚通过 gitlab-ci.yml 实现 流水线自动打包部署",
+            "tag": [
+                { "name": "tool", "type": "tool" },
+                { "name": "前端", "type": "frontEnd" }
+            ],
+            "url": "/blog/tool/DockerCI_03.html",
+            "date": "2024/01/10 20:00",
+            "top": true
+        },
+        {
+            "title": "脚摸手告诉你 基于 Docker（gitlab, gitlab-runner） 搭建完整的自动化 CI/CD 流程（Linux）遇到的坑",
+            "tag": [
+                { "name": "tool", "type": "tool" },
+                { "name": "前端", "type": "frontEnd" }
+            ],
+            "url": "/blog/tool/DockerCI_04.html",
+            "date": "2024/01/10 20:00",
+            "top": true
+        },
+        {
+            "title": "Ubuntu22.04 版本安装 搜狗输入法并解决无法使用和无法输入中文的问题",
+            "tag": [{ "name": "tool", "type": "tool" }],
+            "url": "/blog/tool/ubuntuInstallSougou.html",
+            "date": "2024/01/11 20:00"
+        },
+        {
+            "title": "Cesium 新版本如何创建自己的材质 Material（以 1.104.0 为例）",
+            "tag": [{ "name": "Cesium", "type": "cesium" }],
+            "url": "/blog/cesium/NewCesiumMaterial.html",
+            "date": "2024/01/10 20:00",
+            "top": true
+        },
+        {
+            "title": "Cesium 全局特效：雨、雪、雾、日照（每种划分有大、中、小）",
+            "tag": [{ "name": "Cesium", "type": "cesium" }],
+            "url": "/blog/cesium/SceneSim_01.html",
+            "date": "2024/01/10 20:00",
+            "top": true
+        },
+        {
+            "title": "Cesium 全局特效：水淹效果（流动材质和动态水淹）",
+            "tag": [{ "name": "Cesium", "type": "cesium" }],
+            "url": "/blog/cesium/SceneSim_02.html",
+            "date": "2024/01/10 20:00",
+            "top": true
+        },
+        {
+            "title": "如何打造属于自己的前端基建",
+            "tag": [{ "name": "前端", "type": "frontEnd" }],
+            "url": "/blog/frontEnd/Infrastructure_01.html",
+            "date": "2024/01/10 20:00",
+            "top": true
+        },
+        {
+            "title": "Ubuntu22.04 系统下的 discuz 建站教程",
+            "tag": [
+                { "name": "tool", "type": "tool" },
+                { "name": "前端", "type": "frontEnd" }
+            ],
+            "url": "/blog/tool/discuz.html",
+            "date": "2024/08/12 18:00",
+            "top": true
+        }
+    ]
+}
